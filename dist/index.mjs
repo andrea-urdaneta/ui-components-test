@@ -1,4 +1,4 @@
-// src/components/atoms/Button/Button.web.tsx
+// src/components/atoms/Button/Button.tsx
 import React from "react";
 var Button = ({ title, onPress }) => /* @__PURE__ */ React.createElement("button", { onClick: onPress, style: styles.button }, title);
 var styles = {
@@ -12,7 +12,6 @@ var styles = {
     cursor: "pointer"
   }
 };
-var Button_web_default = Button;
 export {
-  Button_web_default as Button
+  Button
 };

@@ -1,26 +1,25 @@
 import React from "react";
+import { useTheme } from "../../../theme/ThemeContext";
 
 type Props = {
   title: string;
   onPress: () => void;
 };
 
-const Button = ({ title, onPress }: Props) => (
-  <button onClick={onPress} style={styles.button}>
-    {title}
-  </button>
-);
-
-const styles = {
-  button: {
-    padding: "12px",
-    backgroundColor: "blue",
-    border: "none",
-    borderRadius: "6px",
-    color: "white",
-    fontWeight: "bold",
-    cursor: "pointer",
-  },
+const Button = ({ title, onPress }: Props) => {
+  const { tokens } = useTheme();
+  return (
+    <button
+      onClick={onPress}
+      style={{
+        backgroundColor: tokens.color.action.primary["400"],
+        padding: 12,
+        borderRadius: 8,
+      }}
+    >
+      {title}
+    </button>
+  );
 };
 
 export default Button;

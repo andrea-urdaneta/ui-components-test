@@ -1,6 +1,6 @@
 {
   "name": "ui-components-test-aulinkerdev",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -15,6 +15,10 @@
   "dependencies": {
     "react": "^19.1.0",
     "react-native": "^0.79.1"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-native": ">=0.69.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",

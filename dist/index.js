@@ -30,11 +30,11 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var index_exports = {};
 __export(index_exports, {
-  Button: () => Button_web_default
+  Button: () => Button
 });
 module.exports = __toCommonJS(index_exports);
 
-// src/components/atoms/Button/Button.web.tsx
+// src/components/atoms/Button/Button.tsx
 var import_react = __toESM(require("react"));
 var Button = ({ title, onPress }) => /* @__PURE__ */ import_react.default.createElement("button", { onClick: onPress, style: styles.button }, title);
 var styles = {
@@ -48,7 +48,6 @@ var styles = {
     cursor: "pointer"
   }
 };
-var Button_web_default = Button;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Button
